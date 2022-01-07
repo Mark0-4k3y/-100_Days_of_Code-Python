@@ -12,4 +12,7 @@ petName = input("Please, enter your pet name, in case you don't have just assume
 
 # giving user the Band name based on their inputs
 print("Your band name should be: " + cityName + " " + petName + "~" + str(len(cityName + petName) - 1))
+print("This file is successfully added to git :) ")
+
+
 
