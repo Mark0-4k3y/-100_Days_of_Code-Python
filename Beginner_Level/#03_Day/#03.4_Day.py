@@ -39,3 +39,4 @@ if extra_cheese == 'Y':
     bill += 1
 
 print(f"Your total bill is: {bill}\nHave a nice day :)")
+print("Get back Soon :)")
