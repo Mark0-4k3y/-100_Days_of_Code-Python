@@ -26,4 +26,29 @@
 # Love Score = 53
 # Print: "Your score is 53."
 
+#First I will take input from the users and then merge them in one word which will present in either upper case or lower case.
+name1 = input("Enter you name Sir/Ma'am: ")
+name2 = input("Enter their name: ")
+
+#Upper function is used to convert the string to upper Case opposite of this can be done by the lower() function i.e, to lower case
+name = (name1+name2).upper()
+
+#In this I will use the count() function, which return the value of the letter present in the world.
+digit1 = name.count('T') + name.count('R') + name.count('U') + name.count('E')
+digit2 = name.count('L') + name.count('O') + name.count('V') + name.count('E')
+
+#Now I will return the total percentage of the love and a statement
+percentage = digit1 * 10 +digit2
+
+if percentage < 10 or percentage > 90:
+    print(f"Your score is {percentage}%, you go together like coke and mentos.")
+elif 40 <= percentage <= 50:
+    print(f"Your score is {percentage}%, you are alright together.")
+else:
+    print(f"Your score is {percentage}%.")
+
+
+
+
+
 
