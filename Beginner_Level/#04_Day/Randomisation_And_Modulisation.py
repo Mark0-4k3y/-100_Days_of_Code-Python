@@ -4,6 +4,7 @@ import random
 
 #This will print the random number between the number given below in the bracket
 randomAge = random.randint(0, 10)
+
 print(randomAge)
 
 #This will print the random float number between 0 and 1

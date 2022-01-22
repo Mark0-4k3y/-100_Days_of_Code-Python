@@ -8,6 +8,7 @@ import random
 #   2 = Tails
 coinFace = random.randint(0, 2)
 
+
 # Now based upon the value I will print the result
 print("It's a: ")
 if coinFace == 1:
