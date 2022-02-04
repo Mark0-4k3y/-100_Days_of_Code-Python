@@ -29,6 +29,5 @@ random.shuffle(persons)
 payBill = random.randint(0, len(persons)-1)
 print(f"\nThe person who have to pay the bill is: {persons[payBill]}")
 
-
 #And the simplest way to do is: by choice keyword, which will random pick the name from the list
 print(f"The person who have to pay the bill is: {random.choice(persons)}")
