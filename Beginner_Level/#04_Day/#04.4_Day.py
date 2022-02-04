@@ -33,29 +33,32 @@ scissors = '''
 #Here making a loop so can user play at max they want to.
 isloop = True
 while isloop:
-    yourChoice = int(input("\nWhat do you choose?\n0 for Rock \n1 for Paper \n2 for Scissor \n'E' for end the game: \n"))
+    choice = int(input("\nWhat do you choose?\n0 for Rock \n1 for Paper \n2 for Scissor \n'E' for end the game: \n"))
 
-    if yourChoice > 2 or yourChoice < 0:
+    if choice > 2 or choice < 0:
         print("Invalid number, you lose")
         continue
 
-    #What I did ealry
-    # if choice == 0:
-    #     yourChoice = rock
-    # elif choice == 1:
-    #     yourChoice = paper
-    # elif choice == 2:
-    #     yourChoice = scissors
-    # else:
-    #     break
-    # listt = [rock, paper, scissors, rock, scissors, scissors]
-    # computerChoice = random.choice(listt)
+    if choice == 0:
+        yourChoice = rock
+    elif choice == 1:
+        yourChoice = paper
+    elif choice == 2:
+        yourChoice = scissors
+    else:
+        break
 
-    gameImages = [rock, paper, scissors]
-    computerChoice = random.randint(0,2)
+    listt = [rock, paper, scissors]
+    computerChoice = random.choice(listt)
 
-    print("You chose:\n",gameImages[yourChoice])
-    print("\nComputer chose:\n", gameImages[computerChoice])
+    #Another short method to do:
+    # gameImages = [rock, paper, scissors]
+    # computerChoice = random.randint(0,2)
+    # print("You chose:\n",gameImages[yourChoice])
+    # print("\nComputer chose:\n", gameImages[computerChoice])
+
+    print("You chose:\n", yourChoice)
+    print("\nComputer chose:\n", computerChoice)
 
     if yourChoice == computerChoice:
         print("Match Draw")
