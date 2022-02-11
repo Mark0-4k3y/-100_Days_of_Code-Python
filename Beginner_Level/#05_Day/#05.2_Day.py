@@ -17,7 +17,6 @@ for marks in marksList:
 
 print(f'The student have maximum marks in {subList[sub]}, which are: ', maxMarks, '\n')
 
-
 #What if the student have same maximum marks in more than one subject
 indexList = []
 index = 0

@@ -10,6 +10,7 @@ for height in heightList:
 
 print(round(num/len(heightList)))
 
+
 #There is also another way to find out the sum of the list
 #Python has inbuilt sum function which will return the sum of the list
 numList = [150, 450, 850, 260, 2001]
